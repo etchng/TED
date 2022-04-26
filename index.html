@@ -16,14 +16,7 @@
 	</script>
 	<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js">
 	</script>
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-93SE1WNRXN"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
- 
-   gtag('config', 'G-93SE1WNRXN');
- </script>
+
 </head>
 
 <body>
@@ -32,14 +25,14 @@
 				<div class="loading"></div>
 			</div>
 <!-- <div class="wrapper"></div> -->
-
+<!-- 
 <div class="instructions">
 	<div class="demo-wrapper">
 	<div class="demo-1"><h2> Point your device at the QR code to view the model of the left ventricle.</h2></div>
 		<div class="demo-2"><h2> Pinch and drag with your fingers to change your view. </h2></div>
 	<div class="demo-3"><p> Tap here to continue.</p></div>
 	</div>
-</div>
+</div> -->
 
 <div class="btns-wrap-top">
 		<div class="full-btn">
@@ -173,97 +166,24 @@
 	<a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false"  loading-screen="enabled: false" gesture-detector id="scene">
 	<!-- <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" loading-screen="dotsColor: #708ffd; backgroundColor: #930451" gesture-detector id="scene"> -->
 		<a-assets>
-			<a-asset-item id="bowser" src="./3d/MV 2.gltf">
+			<a-asset-item id="eye-model" src="./3d/eye.glb">
 			</a-asset-item>
 			
-			<a-asset-item id="ventricle" src="./3d/ventricle.gltf">
-			</a-asset-item>
-
-			<a-asset-item id="aortic 1" src="./3d/aortic 1.gltf">
-			</a-asset-item>
-			<a-asset-item id="aortic 2" src="./3d/aortic 2.gltf">
-			</a-asset-item>
-			<a-asset-item id="aortic 3" src="./3d/aortic 3.gltf">
-			</a-asset-item>
 	
-			<a-asset-item id="robot-label" src="./3d/cardiac labels.gltf">
-			</a-asset-item>
-			<a-asset-item id="robot-label-2" src="./3d/cardiac labels IE.gltf">
-			</a-asset-item>
-
-			<a-asset-item id="bird" src="./3d/MV IE 3.gltf">
-			</a-asset-item>
-		
-			<a-asset-item id="bflo1" src="./3d/backflow_combined.gltf">
-			</a-asset-item>
-			<a-asset-item id="flow2" src="./3d/flow_combined.gltf">
-			</a-asset-item>
 		
 
 		</a-assets>
 
-		<a-marker preset="custom" type='pattern' url='img/pattern-qr-code.patt' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+		<a-marker  preset='hiro' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
 			</a-entity>
 
-			<a-entity id="bowser-model" gltf-model="#bowser" position="0 1 0" scale="2 2 2" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			</a-entity>
-
-			<a-entity id="flow-model" gltf-model="#flow" visible="true"  position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			<a-entity id="eye-model-model" gltf-model="#eye-model" position="0 1 0" scale=".2 .2 .2" class="clickable" gesture-handler
 			 animation-mixer="timescale: 1;
                            timescale: 0;">
 			</a-entity>
 
-			<a-entity id="ventricle-model" gltf-model="#ventricle" position="0 1 0" scale="2.1 2.1 2.1" material="opacity: 1; transparent: true" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-													 timescale: 0;"													 		 
-													 >
-			</a-entity>
-
-			<a-entity id="aortic1-model" gltf-model="#aortic 1" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			</a-entity>
-			<a-entity id="aortic2-model" gltf-model="#aortic 2" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			</a-entity>
-			<a-entity id="aortic3-model" gltf-model="#aortic 3" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			</a-entity>
-			
-			<a-entity id="bflo1-model" gltf-model="#bflo1" visible="false" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			</a-entity>
-			<a-entity id="flow2-model" gltf-model="#flow2" visible="false" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			</a-entity>
-
-	
-			<a-entity id="robot-text" gltf-model="#robot-label" visible="false" position="0 1 0" scale="2 2 2" class="clickable"
-			 gesture-handler
-			 >
-			 
-			</a-entity>
-			
-      <a-entity id="robot-text-2" gltf-model="#robot-label-2" visible="false" position="0 1 0" scale="2 2 2" class="clickable"
-			 gesture-handler
-			 animation-mixer="timescale: 1;
-                           timescale: 0;">
-			  </a-entity>
-
-				<a-entity id="bird-model" gltf-model="#bird" visible="false" position="0 1 0" scale="2.1 2.1 2.1" class="clickable" gesture-handler
-				 animation-mixer="timescale: 1;
-                           timescale: 0;">
-				</a-entity>
-
-				<a-entity light="type: hemisphere; color: #ffffff; groundColor: #ffffff; intensity: 1.2"></a-entity>
-				<a-entity light="intensity: 1.0; castShadow: true" position="0.5 20 2" data-aframe-default-light="" aframe-injected=""></a-entity>
-
+			<a-entity light="type: hemisphere; color: #ffffff; groundColor: #ffffff; intensity: 1.2"></a-entity>
+				<a-entity light="intensity: 2.5; castShadow: true" position="0.5 20 2" data-aframe-default-light="" aframe-injected=""></a-entity>
 		</a-marker>
 		<a-entity camera></a-entity>
 	</a-scene>

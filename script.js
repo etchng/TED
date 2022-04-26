@@ -238,7 +238,6 @@ AFRAME.registerComponent("gesture-handler", {
 
 // };
 
-var robotLabel = document.querySelector("#robot-text");
 
 document.addEventListener("DOMContentLoaded", function () {
   var scene = document.querySelector("a-scene");
@@ -248,11 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-var instructions = document.querySelector(".instructions");
 
-instructions.addEventListener("click", function () {
-  instructions.classList.add("active");
-});
 
 var playButton = document.querySelector(".play-button");
 var playBorder = document.querySelector(".play-border");
@@ -273,74 +268,20 @@ playpause.addEventListener("click", function () {
 var playtoggle = true;
 
 playpause.addEventListener("click", function (e) {
-  var model = document.querySelector("#bowser-model");
-  var birdModel = document.querySelector("#bird-model");
-  var ventModel = document.querySelector("#ventricle-model");
-  var aortic1 = document.querySelector("#aortic1-model");
-  var aortic2 = document.querySelector("#aortic2-model");
-  var aortic3 = document.querySelector("#aortic3-model");
-  var labelIE = document.querySelector("#robot-text-2");
-  var flow2 = document.querySelector("#flow2-model");
-  var flow2 = document.querySelector("#flow2-model");
-  var bflo = document.querySelector("#bflo1-model");
+  var model = document.querySelector("#eye-model");
+
   if (playtoggle == false) {
     playtoggle = true;
     document
-      .querySelector("#bowser-model")
+      .querySelector("#eye-model")
       .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#bird-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#ventricle-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#aortic1-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#aortic2-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#aortic3-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#robot-text-2")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#flow2-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
-    document
-      .querySelector("#bflo1-model")
-      .setAttribute("animation-mixer", { timeScale: 1 });
+    
   } else {
     playtoggle = false;
     document
-      .querySelector("#bowser-model")
+      .querySelector("#eye-model")
       .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#bird-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#ventricle-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#aortic1-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#aortic2-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#aortic3-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#robot-text-2")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#flow2-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
-    document
-      .querySelector("#bflo1-model")
-      .setAttribute("animation-mixer", { timeScale: 0 });
+   
   }
 });
 
@@ -394,48 +335,24 @@ swap.addEventListener("click", function () {
 //   swap.classList.toggle("active");
 // });
 
-// var model = document.querySelector("#bowser-model");
+// var model = document.querySelector("#eye-model");
 //     var birdModel = document.querySelector("#bird-model");
 
 swap.addEventListener("click", function () {
-  document.querySelector("#bowser-model").setAttribute("visible", false);
-  document.querySelector("#bird-model").setAttribute("visible", true);
-  if (visLabel.classList.contains("active")) {
-    document.querySelector("#robot-text").setAttribute("visible", false);
-    document.querySelector("#robot-text-2").setAttribute("visible", true);
-  } else {
-    document.querySelector("#robot-text").setAttribute("visible", false);
-    document.querySelector("#robot-text-2").setAttribute("visible", false);
-  }
-  if (flow.classList.contains("active")) {
-    document.querySelector("#flow2-model").setAttribute("visible", true);
-    document.querySelector("#bflo1-model").setAttribute("visible", true);
-  } else {
-    document.querySelector("#flow2-model").setAttribute("visible", false);
-    document.querySelector("#bflo1-model").setAttribute("visible", false);
-  }
+  document.querySelector("#eye-model").setAttribute("visible", false);
+  // document.querySelector("#bird-model").setAttribute("visible", true);
+
+ 
 });
 
 healthy.addEventListener("click", function () {
   swap.classList.remove("active");
   healthy.classList.remove("active");
 
-  document.querySelector("#bowser-model").setAttribute("visible", true);
-  document.querySelector("#bird-model").setAttribute("visible", false);
-  if (visLabel.classList.contains("active")) {
-    document.querySelector("#robot-text").setAttribute("visible", true);
-    document.querySelector("#robot-text-2").setAttribute("visible", false);
-  } else {
-    document.querySelector("#robot-text").setAttribute("visible", false);
-    document.querySelector("#robot-text-2").setAttribute("visible", false);
-  }
-  if (flow.classList.contains("active")) {
-    document.querySelector("#flow2-model").setAttribute("visible", true);
-    document.querySelector("#bflo1-model").setAttribute("visible", false);
-  } else {
-    document.querySelector("#flow2-model").setAttribute("visible", false);
-    document.querySelector("#bflo1-model").setAttribute("visible", false);
-  }
+  document.querySelector("#eye-model").setAttribute("visible", true);
+  // document.querySelector("#bird-model").setAttribute("visible", false);
+
+ 
 });
 
 var visLabel = document.querySelector(".label-btn");
@@ -479,7 +396,7 @@ flow.addEventListener("click", function () {
 });
 
 // var labelToggle = false;
-// // var model = document.querySelector("#bowser-model");
+// // var model = document.querySelector("#eye-model");
 // //     var birdModel = document.querySelector("#bird-model");
 
 var fullscreen = document.querySelector(".full-btn");
