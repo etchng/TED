@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ventricle
+* source:	https://sketchfab.com/3d-models/ventricle-d760dba8e9be44f5a3e6e5c048013065
+* author:	eric_chung (https://sketchfab.com/eric.draws)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ventricle" (https://sketchfab.com/3d-models/ventricle-d760dba8e9be44f5a3e6e5c048013065) by eric_chung (https://sketchfab.com/eric.draws) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

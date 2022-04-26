@@ -1,0 +1,6 @@
+<svg width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="eye">
+<path id="eye-outer" d="M19 1C11.2727 1 4.67364 5.76867 2 12.5C4.67364 19.2313 11.2727 24 19 24C26.7273 24 33.3264 19.2313 36 12.5C33.3264 5.76867 26.7273 1 19 1Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+<circle id="iris" cx="19" cy="12" r="6" fill="white"/>
+</g>
+</svg>

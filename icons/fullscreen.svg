@@ -1,0 +1,8 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="fullscreen">
+<path id="top_left" d="M10 2L2 2L2 10" stroke="white" stroke-width="3"/>
+<path id="top_right" d="M16 2L24 2L24 10" stroke="white" stroke-width="3"/>
+<path id="bottom_left" d="M10 24L2 24L2 16" stroke="white" stroke-width="3"/>
+<path id="bottom_right" d="M16 24L24 24L24 16" stroke="white" stroke-width="3"/>
+</g>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="labels">
+<g id="back-tag">
+<path id="Union" d="M11.7185 31.0304L1.41432 20.7262L15.2813 6.85921L25.5855 6.85921L25.5855 17.1634L11.7185 31.0304Z" stroke="white" stroke-width="2"/>
+<circle id="Ellipse 2" cx="21.9363" cy="12.6524" r="1" transform="rotate(45 21.9363 12.6524)" stroke="white" stroke-width="1.10731"/>
+</g>
+<g id="Front-tag">
+<path id="Union_2" d="M15.5913 34.9032L5.28713 24.599L19.1541 10.732L29.4583 10.732L29.4583 21.0362L15.5913 34.9032Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+<circle id="Ellipse 2_2" cx="24.6184" cy="15.3345" r="1" transform="rotate(45 24.6184 15.3345)" fill="white" stroke="white" stroke-width="1.99325"/>
+</g>
+</g>
+</svg>

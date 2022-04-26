@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Infective Endocarditis</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,200&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js">
+	</script>
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">
+	</script>
+	<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js">
+	</script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-93SE1WNRXN"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-93SE1WNRXN');
+ </script>
+</head>
+
+<body>
+
+		<div id="splash">
+				<div class="loading"></div>
+			</div>
+<!-- <div class="wrapper"></div> -->
+
+<div class="instructions">
+	<div class="demo-wrapper">
+	<div class="demo-1"><h2> Point your device at the QR code to view the model of the left ventricle.</h2></div>
+		<div class="demo-2"><h2> Pinch and drag with your fingers to change your view. </h2></div>
+	<div class="demo-3"><p> Tap here to continue.</p></div>
+	</div>
+</div>
+
+<div class="btns-wrap-top">
+		<div class="full-btn">
+			<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="fullscreen">
+				<path id="top_left" d="M10 2L2 2L2 10" stroke="white" stroke-width="3"/>
+				<path id="top_right" d="M16 2L24 2L24 10" stroke="white" stroke-width="3"/>
+				<path id="bottom_left" d="M10 24L2 24L2 16" stroke="white" stroke-width="3"/>
+				<path id="bottom_right" d="M16 24L24 24L24 16" stroke="white" stroke-width="3"/>
+				</g>
+				</svg>
+				
+
+		<!-- <div class="vis-btn">
+
+			<svg width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="eye">
+				<path id="eye-outer" d="M19 1C11.2727 1 4.67364 5.76867 2 12.5C4.67364 19.2313 11.2727 24 19 24C26.7273 24 33.3264 19.2313 36 12.5C33.3264 5.76867 26.7273 1 19 1Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+				<circle id="iris" cx="19" cy="12" r="6" fill="white"/>
+				</g>
+				</svg>
+				
+			<p>Visibility</p></div> -->
+	</div>
+		<!-- <div class="label-btn">Labels</div> -->
+	</div>
+
+
+<div class="btns-wrap-side">
+	
+		<div class="vis-btn">
+
+			<svg width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="eye">
+				<path id="eye-outer" d="M19 1C11.2727 1 4.67364 5.76867 2 12.5C4.67364 19.2313 11.2727 24 19 24C26.7273 24 33.3264 19.2313 36 12.5C33.3264 5.76867 26.7273 1 19 1Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+				<circle id="iris" cx="19" cy="12" r="6" fill="white"/>
+				</g>
+				</svg>
+				
+			<p>Visibility</p></div>
+
+		<div class="flow-btn">
+
+			<svg width="28" height="28" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="flow">
+				<circle id="back-circle" cx="14" cy="14" r="12.995" stroke="white" stroke-opacity="0.01" stroke-width="0.01"/>
+				<path id="drop" d="M11.1615 12.9741C11.8188 11.7534 12.7614 10.3055 13.9998 8.62612C15.2383 10.3055 16.1809 11.7534 16.8382 12.9741C17.6453 14.4731 17.9582 15.515 17.9582 16.171C17.9582 16.6909 17.8558 17.2056 17.6569 17.6858C17.4579 18.1661 17.1664 18.6024 16.7988 18.97C16.4312 19.3376 15.9949 19.6291 15.5146 19.8281C15.0344 20.027 14.5197 20.1294 13.9998 20.1294C13.48 20.1294 12.9653 20.027 12.485 19.8281C12.0048 19.6291 11.5684 19.3376 11.2009 18.97C10.8333 18.6024 10.5417 18.1661 10.3428 17.6858C10.1439 17.2056 10.0415 16.6909 10.0415 16.171C10.0415 15.515 10.3544 14.4731 11.1615 12.9741Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+				<path id="arrow" d="M12.9375 0.1875V2.3125H14V0.1875H12.9375ZM10.6467 0.652875L9.75 0.883437L9.71813 0.915312L9.68306 0.917438L8.78737 1.24894H8.7555L8.72044 1.28081L8.62269 1.31481L9.51837 3.24113H9.55344L9.61931 3.20925L10.3503 2.94362L10.4162 2.90962L11.2449 2.67588L10.6499 0.651813L10.6467 0.652875ZM18.25 1.25V9.75H20.375V4.20375C23.5944 6.3075 25.6875 9.81375 25.6875 14C25.6875 20.4334 20.4334 25.6875 14 25.6875C7.56656 25.6875 2.3125 20.4334 2.3125 14V12.9375H0.1875V14C0.1875 21.5916 6.40844 27.8125 14 27.8125C21.5916 27.8125 27.8125 21.5916 27.8125 14C27.8125 9.68625 25.9053 5.90906 22.8655 3.375H26.75V1.25H18.25ZM6.72825 2.3125L6.16513 2.678L6.13112 2.70988H6.09925L5.36613 3.27513L5.33425 3.30913H5.30025L5.00275 3.57475L6.39675 5.1685L6.6305 4.96875L6.69425 4.93687L7.29244 4.46938L7.35938 4.4375L7.85875 4.10494L6.72719 2.3125H6.72825ZM3.47487 5.06862L3.24113 5.36613L3.20925 5.40013L3.17525 5.43413L2.61213 6.16406V6.19594L2.57812 6.231L2.21263 6.79413L4.00612 7.95756L4.30363 7.45819L4.37163 7.39231L4.83594 6.76331L4.86781 6.72931L5.10156 6.46369L3.47594 5.06969L3.47487 5.06862ZM1.21813 8.6875L1.18306 8.82031L1.15119 8.85219V8.88725L0.817562 9.75V9.78187L0.785687 9.84987L0.551937 10.7466L2.57706 11.3098L2.81081 10.481L2.84269 10.4141L3.10831 9.68306L3.14019 9.61719V9.58531L1.21813 8.6875Z" fill="white"/>
+				</g>
+				</svg>
+				
+				
+			<p>Flow</p></div>
+
+			<div class="label-btn">
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g id="labels">
+					<g id="back-tag">
+					<path id="Union" d="M11.7185 31.0304L1.41432 20.7262L15.2813 6.85921L25.5855 6.85921L25.5855 17.1634L11.7185 31.0304Z" stroke="white" stroke-width="2"/>
+					<circle id="Ellipse 2" cx="21.9363" cy="12.6524" r="1" transform="rotate(45 21.9363 12.6524)" stroke="white" stroke-width="1.10731"/>
+					</g>
+					<g id="Front-tag">
+					<path id="Union_2" d="M15.5913 34.9032L5.28713 24.599L19.1541 10.732L29.4583 10.732L29.4583 21.0362L15.5913 34.9032Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+					<circle id="Ellipse 2_2" cx="24.6184" cy="15.3345" r="1" transform="rotate(45 24.6184 15.3345)" fill="white" stroke="white" stroke-width="1.99325"/>
+					</g>
+					</g>
+					</svg>
+				<p>Labels</p></div>
+		
+	</div>
+
+	
+		<!-- <div class="label-btn">Labels</div> -->
+	</div>
+
+
+	<!-- <div class="label-btn">
+			<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="labels">
+				<g id="back-tag">
+				<path id="Union" d="M11.7185 31.0304L1.41432 20.7262L15.2813 6.85921L25.5855 6.85921L25.5855 17.1634L11.7185 31.0304Z" stroke="white" stroke-width="2"/>
+				<circle id="Ellipse 2" cx="21.9363" cy="12.6524" r="1" transform="rotate(45 21.9363 12.6524)" stroke="white" stroke-width="1.10731"/>
+				</g>
+				<g id="Front-tag">
+				<path id="Union_2" d="M15.5913 34.9032L5.28713 24.599L19.1541 10.732L29.4583 10.732L29.4583 21.0362L15.5913 34.9032Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+				<circle id="Ellipse 2_2" cx="24.6184" cy="15.3345" r="1" transform="rotate(45 24.6184 15.3345)" fill="white" stroke="white" stroke-width="1.99325"/>
+				</g>
+				</g>
+				</svg>
+			<p>Labels</p></div>
+	</div> -->
+
+<div class="nav">
+	<div class="healthy-btn">
+		<div class="healthy-inner">
+			<p>Healthy</p>
+		</div>
+	</div>
+	<div class="patho-btn">
+			<div class="switch-btn">
+		<p>Pathology</p>
+	</div>
+	</div>
+</div>
+	
+	<div class="btns-wrap">
+
+				<!-- <div class="switch-btn">
+				<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path id="pathology" d="M28.4949 3.45588L28.495 3.45584L28.4882 3.44895C25.6191 0.51745 21.13 0.2283 17.9174 2.52567L17.3179 2.95439L17.5499 3.65393L19.1855 8.58443L14.5703 11.6612L13.9101 12.1014L14.1887 12.8444L15.1926 15.5213L11.445 11.7737L15.6798 8.95054L16.3137 8.52793L16.0745 7.80457L14.5105 3.07438L14.4099 2.77016L14.1513 2.58105C10.9348 0.22931 6.40419 0.497574 3.51534 3.45079L3.38812 3.57802L3.38807 3.57797L3.38026 3.58596C0.350779 6.68387 0.229805 11.5954 2.92246 14.8823L2.94908 14.9148L2.97833 14.945L14.5769 26.899L14.5777 26.8998C15.3586 27.7027 16.6359 27.7027 17.4168 26.8998L17.4177 26.899L29.0217 14.9395L29.0506 14.9097L29.077 14.8776C31.7697 11.5967 31.649 6.68714 28.6231 3.58938L28.4949 3.45588Z" fill="#708FFD" stroke="white" stroke-width="2"/>
+					</svg>
+					
+		
+				<p>Pathology</p> 
+			</div> -->
+		
+
+		<div class='play-border'></div>
+		<div class="play-btn">
+			<div class="play-button">
+				<div class="left"></div>
+				<div class="right"></div>
+				<div class="triangle-1"></div>
+				<div class="triangle-2"></div>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false"  loading-screen="enabled: false" gesture-detector id="scene">
+	<!-- <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" loading-screen="dotsColor: #708ffd; backgroundColor: #930451" gesture-detector id="scene"> -->
+		<a-assets>
+			<a-asset-item id="bowser" src="./3d/MV 2.gltf">
+			</a-asset-item>
+			
+			<a-asset-item id="ventricle" src="./3d/ventricle.gltf">
+			</a-asset-item>
+
+			<a-asset-item id="aortic 1" src="./3d/aortic 1.gltf">
+			</a-asset-item>
+			<a-asset-item id="aortic 2" src="./3d/aortic 2.gltf">
+			</a-asset-item>
+			<a-asset-item id="aortic 3" src="./3d/aortic 3.gltf">
+			</a-asset-item>
+	
+			<a-asset-item id="robot-label" src="./3d/cardiac labels.gltf">
+			</a-asset-item>
+			<a-asset-item id="robot-label-2" src="./3d/cardiac labels IE.gltf">
+			</a-asset-item>
+
+			<a-asset-item id="bird" src="./3d/MV IE 3.gltf">
+			</a-asset-item>
+		
+			<a-asset-item id="bflo1" src="./3d/backflow_combined.gltf">
+			</a-asset-item>
+			<a-asset-item id="flow2" src="./3d/flow_combined.gltf">
+			</a-asset-item>
+		
+
+		</a-assets>
+
+		<a-marker preset="custom" type='pattern' url='img/pattern-qr-code.patt' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+			</a-entity>
+
+			<a-entity id="bowser-model" gltf-model="#bowser" position="0 1 0" scale="2 2 2" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+
+			<a-entity id="flow-model" gltf-model="#flow" visible="true"  position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+
+			<a-entity id="ventricle-model" gltf-model="#ventricle" position="0 1 0" scale="2.1 2.1 2.1" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+													 timescale: 0;"													 		 
+													 >
+			</a-entity>
+
+			<a-entity id="aortic1-model" gltf-model="#aortic 1" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+			<a-entity id="aortic2-model" gltf-model="#aortic 2" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+			<a-entity id="aortic3-model" gltf-model="#aortic 3" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+			
+			<a-entity id="bflo1-model" gltf-model="#bflo1" visible="false" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+			<a-entity id="flow2-model" gltf-model="#flow2" visible="false" position="0 1 0" scale="2 2 2" material="opacity: 1; transparent: true" class="clickable" gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			</a-entity>
+
+	
+			<a-entity id="robot-text" gltf-model="#robot-label" visible="false" position="0 1 0" scale="2 2 2" class="clickable"
+			 gesture-handler
+			 >
+			 
+			</a-entity>
+			
+      <a-entity id="robot-text-2" gltf-model="#robot-label-2" visible="false" position="0 1 0" scale="2 2 2" class="clickable"
+			 gesture-handler
+			 animation-mixer="timescale: 1;
+                           timescale: 0;">
+			  </a-entity>
+
+				<a-entity id="bird-model" gltf-model="#bird" visible="false" position="0 1 0" scale="2.1 2.1 2.1" class="clickable" gesture-handler
+				 animation-mixer="timescale: 1;
+                           timescale: 0;">
+				</a-entity>
+
+				<a-entity light="type: hemisphere; color: #ffffff; groundColor: #ffffff; intensity: 1.2"></a-entity>
+				<a-entity light="intensity: 1.0; castShadow: true" position="0.5 20 2" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+		</a-marker>
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
+
+</html>
+<!-- partial -->
+<script src="./script.js">
+</script>
+
+</body>
